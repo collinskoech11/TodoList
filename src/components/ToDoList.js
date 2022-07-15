@@ -8,7 +8,7 @@ import ToDo from './ToDo';
 function ToDoList({toDoList, handleToggle, handleFilter, handleReset}) {
   return (
     <>
-    <div style={{paddingBottom:"200px", border:"1px solid red"}}>
+    <div style={{paddingBottom:"200px"}}>
       <h3 style={{color:'navy'}}>Pending</h3>
         <div className="align">
         {toDoList.map(todo => {
