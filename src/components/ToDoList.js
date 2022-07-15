@@ -8,7 +8,7 @@ import ToDo from './ToDo';
 function ToDoList({toDoList, handleToggle, handleFilter, handleReset}) {
   return (
     <>
-      <h3>Pending</h3>
+      <h3 style={{color:'navy'}}>Pending</h3>
         <div className="align">
         {toDoList.map(todo => {
           return (
@@ -22,9 +22,7 @@ function ToDoList({toDoList, handleToggle, handleFilter, handleReset}) {
           )
         })}
       </div>
-
-
-      <h3>Completed</h3>
+      <h3 style={{color:'navy'}}>Completed</h3>
       <div className="align">
         {toDoList.map(todo => {
           return (
@@ -39,7 +37,6 @@ function ToDoList({toDoList, handleToggle, handleFilter, handleReset}) {
         })}
       </div>
       <button className="clear" onClick={handleFilter}>Clear Completed</button>
-
       <button className="reset" onClick={handleReset}>Reset</button>
     </>
   )

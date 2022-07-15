@@ -17,7 +17,7 @@ function ToDoForm({addTask}) {
     }
    return (
     <div className="form">
-    <h3 style={{color:"green"}}>Create a todo item</h3>
+    <h3 style={{color:"navy"}}>Create a todo item</h3>
       <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..." onKeyDown={handleKeyDown}/>
       <button onClick={handleSubmit} className="submit">Submit</button>
     </div>

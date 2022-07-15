@@ -40,7 +40,9 @@
 }
 .strike{
   width:80vw;
-  background-color:rgba(0,255,0, 0.5);
+  background-color:navy;
+  font-weight:bold;
+  color:#fff;
   border-radius: 10px;
   margin:auto;
   margin-bottom: 20px;
@@ -52,7 +54,9 @@
 }
 .todo{
   width:80vw;
-  background-color:rgba(255,0,0, 0.5);
+  background-color:rgba(255,0,0);
+  color:#fff;
+  font-weight:bold;
   border-radius: 10px;
   padding:20px;
   margin:auto;
@@ -61,9 +65,9 @@
 .submit{
   width:80vw;
   margin: auto;
-  background-color:lightblue;
+  background-color:navy;
   text-transform: uppercase; 
-  color:#fff;
+  color:white;
   font-weight:bold;
   padding: 10px;
   border:none;
@@ -92,7 +96,7 @@
 .form input{
   width: 80%;
   height:50px;
-  border:1px solid lightblue;
+  border:1px solid navy;
   padding: 10px;
   padding-left:20px;
   border-radius: 10px;
@@ -115,4 +119,14 @@
   border-radius:10px;
   border:none;
   padding:15px;
+}
+.header{
+  width:100vw;
+  height:auto;
+  background-color:navy;
+  padding:5px
+}
+.header h1{
+  text-decoration: wavy;
+  color:white;
 }

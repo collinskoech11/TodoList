@@ -1,12 +1,19 @@
 import './App.css';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Header from './components/Header'
-import data from './DummyData/data.json'
+// import data from './DummyData/data.json'
 import ToDoList from './components/ToDoList';
 import ToDoForm from './components/ToDoForm';
 
+
 function App() {
-  const [toDoList, setToDoList ] = useState(data);
+  const data = []
+  // const dataro = JSON.parse(localStorage.getItem("data"))
+  const [toDoList, setToDoList ] = useState([]);
+  useEffect(() => {
+    localStorage.setItem("data",JSON.stringify(data))
+  })
+  // const rada = JSON.parse(localStorage.getItem("data"))
   const handleToggle =(id) => {
     let mapped = toDoList.map(task => {
       return task.id === Number(id) ? { ...task, complete: ! task.complete }: {...task};
@@ -30,6 +37,7 @@ function App() {
     copy = [...copy, {id: toDoList.length + 1, task : userInput, complete: false }];
     setToDoList(copy);
   }
+  
   return (
     <div className="App">
       <Header/>
