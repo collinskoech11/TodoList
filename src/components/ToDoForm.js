@@ -6,14 +6,20 @@ function ToDoForm({addTask}) {
         setUserInput(e.currentTarget.value)
     }
     const handleSubmit = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         addTask(userInput);
         setUserInput("");
     }
+    const handleKeyDown = (e) => {
+      if (e.key === 'Enter') {
+        handleSubmit();
+      }
+    }
    return (
-    <div>
-      <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..."/>
-      <button onClick={handleSubmit}>Submit</button>
+    <div className="form">
+    <h3 style={{color:"green"}}>Create a todo item</h3>
+      <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..." onKeyDown={handleKeyDown}/>
+      <button onClick={handleSubmit} className="submit">Submit</button>
     </div>
   )
 }

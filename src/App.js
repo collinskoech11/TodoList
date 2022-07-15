@@ -19,6 +19,12 @@ function App() {
     });
     setToDoList(filtered);
   }
+  const handleReset = () => {
+    let filtered = toDoList.filter(task => {
+      return !task;
+    });
+    setToDoList(filtered);
+  }
   const addTask = (userInput) => {
     let copy = [...toDoList];
     copy = [...copy, {id: toDoList.length + 1, task : userInput, complete: false }];
@@ -27,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
+      <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter} handleReset={handleReset}/>
       <ToDoForm addTask={addTask}/>
     </div>
   );
