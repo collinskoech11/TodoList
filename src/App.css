@@ -65,7 +65,7 @@
 .submit{
   width:80vw;
   margin: auto;
-  background-color:navy;
+  background-color:green;
   text-transform: uppercase; 
   color:white;
   font-weight:bold;
@@ -77,7 +77,7 @@
 .clear{
   width:80vw;
   margin: auto;
-  background-color:red ;
+  background-color:orange ;
   text-transform: uppercase; 
   color:#fff;
   font-weight:bold;
