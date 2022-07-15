@@ -6,7 +6,7 @@ Tasks need to be stored on  LocalStorage
 ### Uncaptured edge cases
 prevent loss of data on refresh
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
